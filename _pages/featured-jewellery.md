@@ -4,7 +4,7 @@ description: "Explore featured jewellery including gold necklace sets, diamond r
 image: "/assets/images/diamond-ring.jpg"
 ---
 
-<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.28)), url('{{ "/assets/images/diamond-ring.jpg" | relative_url }}');">
+<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.28)), url('{{ "/assets/images/diamond-ring.jpg" | absolute_url }}');">
   <div class="container">
     <p class="eyebrow reveal">Featured jewellery</p>
     <h1 class="reveal">Signature pieces selected for brilliance, purity and presence.</h1>
@@ -15,7 +15,7 @@ image: "/assets/images/diamond-ring.jpg"
   <div class="container">
     <div class="row g-5 align-items-center">
       <div class="col-lg-6 reveal">
-        <img class="feature-img" src="{{ '/assets/images/diamond-ring.jpg' | relative_url }}" alt="Featured diamond ring jewellery detail">
+        <img class="feature-img" src="{{ '/assets/images/diamond-ring.jpg' | absolute_url }}" alt="Featured diamond ring jewellery detail">
       </div>
       <div class="col-lg-6 reveal">
         <p class="eyebrow">Aurelia signature</p>
@@ -26,7 +26,7 @@ image: "/assets/images/diamond-ring.jpg"
           <div><dt>Available in</dt><dd>18K gold, 22K gold and platinum finish options</dd></div>
           <div><dt>Services</dt><dd>Size adjustment, custom stone selection, engraving and certification</dd></div>
         </dl>
-        <a class="btn btn-gold" href="{{ '/contact/' | relative_url }}">Ask for Price and Availability</a>
+        <a class="btn btn-gold" href="{{ '/contact/' | absolute_url }}">Ask for Price and Availability</a>
       </div>
     </div>
   </div>

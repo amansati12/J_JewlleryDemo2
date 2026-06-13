@@ -4,7 +4,7 @@ description: "View festive jewellery offers on gold jewellery, diamond jewellery
 image: "/assets/images/festival-offer.jpg"
 ---
 
-<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/festival-offer.jpg" | relative_url }}');">
+<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/festival-offer.jpg" | absolute_url }}');">
   <div class="container">
     <p class="eyebrow reveal">Current offers</p>
     <h1 class="reveal">Festive jewellery offers with premium service and transparent value.</h1>

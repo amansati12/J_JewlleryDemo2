@@ -4,7 +4,7 @@ description: "View jewellery gallery images for gold jewellery, diamond jeweller
 image: "/assets/images/bridal-jewellery.jpg"
 ---
 
-<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/bridal-jewellery.jpg" | relative_url }}');">
+<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/bridal-jewellery.jpg" | absolute_url }}');">
   <div class="container">
     <p class="eyebrow reveal">Gallery</p>
     <h1 class="reveal">A closer look at jewellery made for celebration.</h1>
@@ -20,13 +20,13 @@ image: "/assets/images/bridal-jewellery.jpg"
       <button data-filter="bridal">Bridal</button>
     </div>
     <div class="row g-4 gallery-grid">
-      {% assign gallery = "gold|assets/images/gold-necklace.jpg|Gold necklace jewellery;diamond|assets/images/diamond-ring.jpg|Diamond ring jewellery;bridal|assets/images/bridal-jewellery.jpg|Bridal jewellery set;gold|assets/images/bangles.jpg|Gold bangles jewellery;diamond|assets/images/earrings.jpg|Diamond earrings jewellery;bridal|assets/images/custom-jewellery.jpg|Custom bridal jewellery" | split: ";" %}
+      {% assign gallery = "gold|/assets/images/gold-necklace.jpg|Gold necklace jewellery;diamond|/assets/images/diamond-ring.jpg|Diamond ring jewellery;bridal|/assets/images/bridal-jewellery.jpg|Bridal jewellery set;gold|/assets/images/bangles.jpg|Gold bangles jewellery;diamond|/assets/images/earrings.jpg|Diamond earrings jewellery;bridal|/assets/images/custom-jewellery.jpg|Custom bridal jewellery" | split: ";" %}
       {% for item in gallery %}
         {% assign data = item | split: "|" %}
         <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="{{ data[0] }}">
           <figure>
             <!-- Replace this placeholder image with your actual {{ data[2] }} photo. -->
-            <img src="{{ data[1] | relative_url }}" alt="{{ data[2] }}">
+            <img src="{{ data[1] | absolute_url }}" alt="{{ data[2] }}">
             <figcaption>{{ data[2] }}</figcaption>
           </figure>
         </div>

@@ -4,7 +4,7 @@ description: "Learn about Aurelia Jewels, a premium jewellery showroom known for
 image: "/assets/images/showroom.jpg"
 ---
 
-<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.35)), url('{{ "/assets/images/showroom.jpg" | relative_url }}');">
+<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.35)), url('{{ "/assets/images/showroom.jpg" | absolute_url }}');">
   <!-- Replace assets/images/showroom.jpg with your actual showroom photo. -->
   <div class="container">
     <p class="eyebrow reveal">About Aurelia Jewels</p>

@@ -4,7 +4,7 @@ description: "Read customer testimonials for Aurelia Jewels, a trusted jewellery
 image: "/assets/images/showroom.jpg"
 ---
 
-<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/showroom.jpg" | relative_url }}');">
+<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/showroom.jpg" | absolute_url }}');">
   <div class="container">
     <p class="eyebrow reveal">Testimonials</p>
     <h1 class="reveal">Families return to us for trust, choice and thoughtful guidance.</h1>

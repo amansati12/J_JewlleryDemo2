@@ -4,7 +4,7 @@ description: "Contact Aurelia Jewels for gold jewellery, diamond jewellery, brid
 image: "/assets/images/showroom.jpg"
 ---
 
-<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/showroom.jpg" | relative_url }}');">
+<section class="page-hero compact-hero" style="background-image: linear-gradient(90deg, rgba(9,7,4,.88), rgba(9,7,4,.32)), url('{{ "/assets/images/showroom.jpg" | absolute_url }}');">
   <div class="container">
     <p class="eyebrow reveal">Contact us</p>
     <h1 class="reveal">Visit the showroom or start your jewellery inquiry online.</h1>

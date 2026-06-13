@@ -14,14 +14,14 @@ image: "/assets/images/hero-jewellery.jpg"
     Keep the poster images as fallbacks for slow networks and mobile browsers.
   -->
   <div class="hero-media" aria-hidden="true">
-    <video class="hero-video active" muted loop playsinline preload="metadata" poster="{{ '/assets/images/hero-jewellery.jpg' | relative_url }}">
-      <source src="{{ '/assets/videos/hero-jewellery-1.mp4' | relative_url }}" type="video/mp4">
+    <video class="hero-video active" muted loop playsinline preload="metadata" poster="{{ '/assets/images/hero-jewellery.jpg' | absolute_url }}">
+      <source src="{{ '/assets/videos/hero-jewellery-1.mp4' | absolute_url }}" type="video/mp4">
     </video>
-    <video class="hero-video" muted loop playsinline preload="metadata" poster="{{ '/assets/images/bridal-jewellery.jpg' | relative_url }}">
-      <source src="{{ '/assets/videos/hero-jewellery-2.mp4' | relative_url }}" type="video/mp4">
+    <video class="hero-video" muted loop playsinline preload="metadata" poster="{{ '/assets/images/bridal-jewellery.jpg' | absolute_url }}">
+      <source src="{{ '/assets/videos/hero-jewellery-2.mp4' | absolute_url }}" type="video/mp4">
     </video>
-    <video class="hero-video" muted loop playsinline preload="metadata" poster="{{ '/assets/images/diamond-ring.jpg' | relative_url }}">
-      <source src="{{ '/assets/videos/hero-jewellery-3.mp4' | relative_url }}" type="video/mp4">
+    <video class="hero-video" muted loop playsinline preload="metadata" poster="{{ '/assets/images/diamond-ring.jpg' | absolute_url }}">
+      <source src="{{ '/assets/videos/hero-jewellery-3.mp4' | absolute_url }}" type="video/mp4">
     </video>
   </div>
   <div class="hero-overlay"></div>
@@ -37,8 +37,8 @@ image: "/assets/images/hero-jewellery.jpg"
         <h1>Jewellery crafted for promises, celebrations, and heirloom memories.</h1>
         <p class="hero-text">Explore gold jewellery, diamond jewellery, bridal jewellery, custom jewellery, rings, bangles, necklaces, earrings, and wedding jewellery designed with purity, precision, and personal attention.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="{{ '/collections/' | relative_url }}">Explore Collections</a>
-          <a class="btn btn-outline-light" href="{{ '/contact/' | relative_url }}">Book a Visit</a>
+          <a class="btn btn-gold" href="{{ '/collections/' | absolute_url }}">Explore Collections</a>
+          <a class="btn btn-outline-light" href="{{ '/contact/' | absolute_url }}">Book a Visit</a>
         </div>
         <div class="trust-row">
           <span>BIS Hallmarked Gold</span>
@@ -58,16 +58,16 @@ image: "/assets/images/hero-jewellery.jpg"
       <p>From everyday elegance to wedding jewellery that becomes part of family history, every piece is curated with balance, purity, and emotion.</p>
     </div>
     <div class="row g-4">
-      {% assign collections = "Gold Jewellery|assets/images/gold-necklace.jpg|Necklaces, chains and temple-inspired sets with hallmarked purity.;Diamond Jewellery|assets/images/diamond-ring.jpg|Rings, solitaires and earrings with certified sparkle.;Bridal Jewellery|assets/images/bridal-jewellery.jpg|Layered bridal sets for ceremonies, receptions and heirloom moments.;Bangles & Earrings|assets/images/bangles.jpg|Classic bangles, modern cuffs and graceful earrings." | split: ";" %}
+      {% assign collections = "Gold Jewellery|/assets/images/gold-necklace.jpg|Necklaces, chains and temple-inspired sets with hallmarked purity.;Diamond Jewellery|/assets/images/diamond-ring.jpg|Rings, solitaires and earrings with certified sparkle.;Bridal Jewellery|/assets/images/bridal-jewellery.jpg|Layered bridal sets for ceremonies, receptions and heirloom moments.;Bangles & Earrings|/assets/images/bangles.jpg|Classic bangles, modern cuffs and graceful earrings." | split: ";" %}
       {% for item in collections %}
         {% assign data = item | split: "|" %}
         <div class="col-md-6 col-lg-3 reveal">
           <article class="lux-card product-card">
-            <img src="{{ data[1] | relative_url }}" alt="{{ data[0] }} collection at Aurelia Jewels">
+            <img src="{{ data[1] | absolute_url }}" alt="{{ data[0] }} collection at Aurelia Jewels">
             <div class="card-body">
               <h3>{{ data[0] }}</h3>
               <p>{{ data[2] }}</p>
-              <a href="{{ '/collections/' | relative_url }}">View Collection</a>
+              <a href="{{ '/collections/' | absolute_url }}">View Collection</a>
             </div>
           </article>
         </div>
@@ -80,7 +80,7 @@ image: "/assets/images/hero-jewellery.jpg"
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6 reveal">
-        <img class="feature-img" src="{{ '/assets/images/bridal-jewellery.jpg' | relative_url }}" alt="Bridal jewellery necklace and bangles">
+        <img class="feature-img" src="{{ '/assets/images/bridal-jewellery.jpg' | absolute_url }}" alt="Bridal jewellery necklace and bangles">
       </div>
       <div class="col-lg-6 reveal">
         <p class="eyebrow">Bridal jewellery appointment</p>
@@ -91,7 +91,7 @@ image: "/assets/images/hero-jewellery.jpg"
           <li>Certified stones, purity documentation and lifetime service support</li>
           <li>Private appointment experience for families and wedding planners</li>
         </ul>
-        <a class="btn btn-dark-gold" href="{{ '/contact/' | relative_url }}">Schedule Bridal Consultation</a>
+        <a class="btn btn-dark-gold" href="{{ '/contact/' | absolute_url }}">Schedule Bridal Consultation</a>
       </div>
     </div>
   </div>
@@ -104,7 +104,7 @@ image: "/assets/images/hero-jewellery.jpg"
         <p class="eyebrow">Festival jewellery offers</p>
         <h2>Celebrate with limited-period jewellery offers</h2>
         <p>Enjoy seasonal benefits on gold jewellery, diamond jewellery, bangles, earrings, rings and necklace sets during weddings, festivals, anniversaries and gifting occasions.</p>
-        <a class="btn btn-gold" href="{{ '/offers/' | relative_url }}">See Current Offers</a>
+        <a class="btn btn-gold" href="{{ '/offers/' | absolute_url }}">See Current Offers</a>
       </div>
       <div class="col-lg-7 reveal">
         <div class="offer-strip">
